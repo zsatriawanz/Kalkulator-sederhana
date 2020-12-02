@@ -1,0 +1,215 @@
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background:url(img/bg.jpg) no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.container{
+	width:1080px;
+	margin: 50px auto;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+/*header*/
+
+header{
+	/*border:1px solid black;*/
+	padding:10px;
+	display: grid;
+	gap:5px;
+	grid-template-columns: 3fr 1fr;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+header h3{
+	/*width:60%;*/
+	background-color: #3EC6FF;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 1.5em;
+	color:white;
+	text-shadow: 1px 1px 1px black;
+}
+header ul{
+	/*border:1px solid black;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin:10px;
+	padding:10px;
+}
+
+header ul li{
+	/*border:1px solid black;*/
+	box-sizing: border-box;
+
+}
+
+header ul li a{
+	/*border:1px solid black;*/
+	padding:0 10px;
+	color:black;
+}
+
+/* contetn */
+
+.conten{
+	/*border:1px solid black;*/
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.form{
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	gap:10px;
+}
+
+.tombol{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"satu dua tiga tambah" 
+	"empat lima enam kurang" 
+	"tujuh delapan sembilan kali" 
+	"kosong hapus hasil bagi";
+	gap:10px;
+
+}
+
+.item{
+	height:50px;
+	outline:none;
+	border:none;
+	background:#3EC6FF;
+	font-size: 1em;
+	color: white;
+}
+
+.item:hover{
+	background-color:white;
+	color:black;
+	font-weight: bold;
+}
+
+
+.tombol .item1{
+	grid-area: satu;
+
+}
+.tombol .item2{
+	grid-area:dua;
+
+}
+.tombol .item3{
+	grid-area: tiga;
+
+}
+.tombol .item4{
+	grid-area: empat;
+
+}
+.tombol .item5{
+	grid-area: lima;
+
+}
+.tombol .item6{
+	grid-area: enam;
+
+}
+.tombol .item7{
+	grid-area: tujuh;
+
+}
+.tombol .item8{
+	grid-area: delapan;
+
+}
+.tombol .item9{
+	grid-area:sembilan;
+
+}
+.tombol .item0{
+	grid-area: kosong;
+
+}
+.tombol .itemkali{
+	grid-area: kali;
+}
+
+.tombol .itembagi{
+	grid-area: bagi;
+}
+.tombol .itemkurang{
+	grid-area: kurang;
+}
+
+.tombol .itemtambah{
+	grid-area: tambah;
+}
+
+.tombol .itemhasil{
+	grid-area: hasil;
+}
+
+.tombol .hapus{
+	grid-area:hapus;
+}
+
+
+form input{
+	text-align: center;
+	font-size: 2em;
+	border:none;
+	outline: 2px solid #3EC6FF;
+	margin:1px;
+}
+
+
+
+header ul li a{
+	display: flex;
+}
+
+header ul li a .info,
+header ul li a .contact{
+	display: none;
+}
+header ul li a:hover .info,
+header ul li a:hover .contact{
+	display: flex;
+	height:70px;
+	width:250px;
+	position: absolute;
+	background: #FFEB0F;
+	top:110px;
+	right:150px;
+	text-align: center;
+	padding:0 5px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border-right: 5px solid #25211B;
+	line-height: 30px;
+	margin:5px;
+	align-items: center;
+	justify-content: center;
+	color:black;
+	font-weight: normal;
+}
+
+header ul li a:hover,
+header ul li a:hover{
+		color:#FF5C5C;
+		font-weight: bold;
+}
